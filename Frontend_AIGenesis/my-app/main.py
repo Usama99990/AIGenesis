@@ -17,7 +17,7 @@ app.add_middleware(
 )
 
 # Database Configuration
-DATABASE_URL = "postgresql+pg8000://postgres:12345678@localhost:5432/postgres"
+DATABASE_URL = "postgresql+pg8000://username:password@localhost:5432/postgres"
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
